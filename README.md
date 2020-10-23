@@ -2,5 +2,6 @@
 Miscellaneous data
 
 ## SEEG Example Data
-Note that the electrode coordinates are in MNI (``fsaverage``) space. 
+Note that the electrode coordinates were transformed from the subject's
+FreeSurfer surface RAS (MRI) space to MNI space.
 
