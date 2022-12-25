@@ -8,7 +8,10 @@ import mne
 from mne.transforms import rot_to_quat
 from mne.simulation import simulate_raw
 
+# MNE-Python 1.0+ returns a pathlib.Path here; cast to string for backwards-
+# compatibility.
 data_path = mne.datasets.sample.data_path()
+data_path = str(data_path)
 
 ###############################################################################
 # Simulate some head movement (typically recorded data could be used instead)
